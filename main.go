@@ -208,7 +208,7 @@ func main() {
 		return output
 	}
 
-	// Инициализируем канал входных данных и закрывающий канал
+	// Инициализируем канал входных данных и закрывающий канал - test
 	data, complete := srcstream()
 	// Передаем данные полтребителю, обрабатывая их в пайплайне
 	receiver(complete, buffering(complete, filter2(complete, filter1(complete, data))))
